@@ -20,25 +20,25 @@
 
 #### Q3. Which is _not_ a valid loop construct in Go?
 
-- [x]
+- [x] &shy;
 
 ```go
       do { ... } while i < 5
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       for _,c := range "hello" { ... }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       for i := 1; i < 5; i++ { ... }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       for i < 5 { ... }
@@ -52,25 +52,25 @@
 values := []int{1, 1, 2}
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       values.append(3)
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       values.insert(3, 3)
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       append(values, 3)
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
       values = append(values, 3)
@@ -97,25 +97,25 @@ const (
 
 #### Q6. Which is the _only_ valid import statement in Go?
 
-- [ ]
+- [ ] &shy;
 
 ```go
       import "github/gin-gonic/gin"
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       import "https://github.com/gin-gonic/gin"
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       import "../template"
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
       import "github.com/gin-gonic/gin"
@@ -321,25 +321,25 @@ func Add(a, b int) {
 data := "A group of Owls is called a parliament"
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
   resp, err := http.Post("https://httpbin.org/post", "text/plain", []byte(data))
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       resp, err := http.Post("https://httpbin.org/post", "text/plain", data)
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
       resp, err := http.Post("https://httpbin.org/post", "text/plain", strings.NewReader(data))
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       resp, err := http.Post("https://httpbin.org/post", "text/plain", &data)
@@ -582,7 +582,11 @@ fmt.Println(val)
 - [x] 0
 - [ ] NaN
 
-[Go Playground share](https://go.dev/play/p/DjXq9wzJm5M), output:
+1. [The Go Programming Language Specification "Receive operator"](https://go.dev/ref/spec#Receive_operator), Relevant excerpt from the article:
+
+   > _A receive operation on a closed channel can always proceed immediately, yielding the element type's zero value after any previously sent values have been received._
+
+2. [Go Playground share](https://go.dev/play/p/DjXq9wzJm5M), output:
 
 ```text
 0
@@ -708,13 +712,13 @@ fmt.Println(i)
 Program exited.
 ```
 
-#### 45. Given the definition of worker below, what is the right syntax to start a start a goroutine that will call worker and send the result to a channel named ch?
+#### 45. Given the definition of worker below, what is the right syntax to start a goroutine that will call worker and send the result to a channel named ch?
 
 ```go
 func worker(m Message) Result
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 go func() {
@@ -723,7 +727,7 @@ go func() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 go func() {
@@ -732,7 +736,7 @@ go func() {
 } ()
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
 go func() {
@@ -741,7 +745,7 @@ go func() {
 } ()
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 go ch <- worker(m)
@@ -847,27 +851,27 @@ func main() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       ctx.SetTimeout(3*time.Second)
       req.AttachContext(ctx)
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
       ctx, cancel = context.WithTimeout(ctx, 3*time.Second); defer cancel()
       req = req.WithContext(ctx)
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       ctx, cancel = context.WithTimeout(ctx, 3*time.Second); defer cancel() #2: req.AttachContext(ctx)
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
       ctx.SetTimeout(3*time.Second)
@@ -879,25 +883,25 @@ func main() {
 
 #### Q53. If you have a struct named Client defined in the same .go file as the statement, how do you export a variable with a default value so the variable is accessible by other packages?
 
-- [ ]
+- [ ] &shy;
 
   ```go
   let Default := new Client()
   ```
 
-- [ ]
+- [ ] &shy;
 
   ```go
   public default = &Client()
   ```
 
-- [x]
+- [x] &shy;
 
   ```go
   var Default = &Client{}
   ```
 
-- [ ]
+- [ ] &shy;
 
   ```go
   export default := new Client{}
@@ -1056,11 +1060,20 @@ fmt.Println (n)
 #### Q59. Which is not a valid value for layout when calling time. Now ( ) . Format ( layout)?
 
 - [ ] time.REC3339
-- [ ] "1970-01-01"
+- [x] "1970-01-01"
 - [ ] "Jan 2nd 2006"
-- [x] time.Kitchen
+- [ ] time.Kitchen
 
-> The time.Kitchen constant is not a valid value for layout when calling time.Now().Format(layout). The time.Kitchen constant is used to format a time value in a 12-hour clock format with seconds, such as 3:04:05PM.
+[time#Time.Format](https://pkg.go.dev/time#Time.Format)
+
+According to the documentation, the value 1 and 01 will represent the current month.
+
+```text
+each layout string is a representation of the time stamp,
+	Jan 2 15:04:05 2006 MST
+An easy way to remember this value is that it holds, when presented in this order, the values (lined up with the elements above):
+	  1 2  3  4  5    6  -7
+```
 
 #### Q60. How would you signal to the Go compiler that the Namespace struct must implement the JSONConverter interface? This question assumes the answer would be included in the same package where Namespace is declared.
 
@@ -1151,7 +1164,7 @@ func main() {
 }
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 #1: games := make([]*Game, results.RowsAffected())
@@ -1159,7 +1172,7 @@ func main() {
 #3: games[results.Index()] = &g
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 #1: games := []Game{}
@@ -1167,7 +1180,7 @@ func main() {
 #3: games = append(games,g)
 ```
 
-- [ ]
+- [ ] &shy;
 
 ```go
 #1: games := map[int]Game{}
@@ -1175,7 +1188,7 @@ func main() {
 #3: games[g.GameId] = g
 ```
 
-- [x]
+- [x] &shy;
 
 ```go
 #1: games := make(map[int]*Game, 0)
@@ -1235,3 +1248,98 @@ x, err := myFunc()
 - [ ] if none of the variables exist in that lexical block
 
 1. [Short variable declarations](https://go.dev/ref/spec#Short_variable_declarations)
+
+#### Q66. How can You view the profiler output in cpu.pprof in the browser?
+
+- [ ] go pprof -to SVG cpu.prof
+- [x] go tool pprof -http=:8080 cpu.pprof (true)
+- [ ] go tool pprof cpu.pprof
+- [ ] go tool trace cpu.pprof
+
+#### Q67. When does a variable of type interface{} evaluate to nil?
+
+- [x] It has been assingned a dynamic type whose value is nil. (true)
+- [ ] It has been explicitly set to nil.
+- [ ] It has not been assigned a dynamic type.
+- [ ] It can not evaluate to nil.
+
+#### Q68. What value does a string variable hold if it has been allocated but not assigned?
+
+- [ ] nil
+- [ ] undefined
+- [ ] null
+- [x] ""
+
+> If a string variable has been allocated but not assigned a value, its default value is an empty string "". In Go, uninitialized string variables are automatically assigned the zero value for their respective type, which for strings is an empty string.
+
+#### Q69. Which built-in function is used to stop a program from continuing?
+
+- [x] panic
+- [ ] There is no such function.
+- [ ] raiseException
+- [ ] exit
+
+> The built-in function used to stop a program from continuing is `panic()`. When `panic()` is called, it triggers a panic, which stops the normal execution flow of the program and begins panicking. If the panic is not recovered, the program terminates.
+
+#### Q70. What will the output be?
+
+```go
+a,b := 1, 2
+b,c:= 3, 4
+fmt.Println(a, b, c)
+```
+
+- [x] 1 3 4
+- [ ] 1 2 3
+- [ ] 1 2 4
+- [ ] It will not compile.
+
+[Go Playground Example](https://go.dev/play/p/qUI50GNGWTq)
+
+### Q71. What is the operator for a logical AND condition?
+
+- [ ] \+
+- [ ] and
+- [x] &&
+- [ ] ||
+
+### Q72. What is an anonymous function in Go?
+
+- [ ] A function with no return type.
+- [ ] A function with no parameters.
+- [x] A function without a name.
+- [ ] A function declared inside another function.
+
+### Q73.Which keyword is used to declare an anonymous function in Go?
+
+- [ ] `func`
+- [ ] `lambda`
+- [x] `func()`
+- [ ] `anonymous`
+
+#### Q74. What is the main advantage of using anonymous functions in Go?
+
+- [ ] They always have better performance than named functions.
+- [ ] They can have multiple return values.
+- [x] They can be defined inline where they are used.
+- [ ] They have a shorter syntax than named functions.
+
+Explanation: they can be defined inline where they are used, offering more flexibility in code organization.
+
+#### Q75. What is the syntax for calling an anonymous function immediately after its declaration in Go?
+
+- [ ] `functionName(){}`
+- [ ] `call functionName(){}`
+- [x] `func(){}()`
+- [ ] `execute func(){}`
+
+[reference](https://stackoverflow.com/questions/6719089/javascript-anonymous-function-immediate-invocation-execution-expression-vs-dec)
+
+#### Q76. Which types can Go developers define methods for?
+
+- [x] `all named types not built-in to Go, such as type Example int but not int, type Example struct{...} but not struct, etc.`
+- [ ] `only types named struct, map, and slice, such as type Example struct{…}`
+- [ ] `only types named struct, such as type Example struct{...}`
+- [ ] `all types`
+
+> Methods can be defined for any named type that is not a built-in type. When you create a new type using a type declaration, it becomes a named type, and you can define methods specific to that type. However, methods cannot be directly attached to built-in types like int, string, etc. [reference](https://go.dev/ref/spec#Method_declarations)

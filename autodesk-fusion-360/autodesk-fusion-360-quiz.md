@@ -39,7 +39,6 @@
 
 #### Q6. In the CAM workspace, which strategy removes a part's interior cavity?
 
-
 - [ ] Slot
 - [x] 2D Pocket
 - [ ] Bore
@@ -59,7 +58,7 @@
 - [ ] Offset Plane
 - [ ] Plane at Angle
 
-#### Q9. Which hole type automatically enters a diameter value based on the type of fastener it will accomodate?
+#### Q9. Which hole type automatically enters a diameter value based on the type of fastener it will accommodate?
 
 - [ ] Clearance
 - [x] Simple
@@ -117,7 +116,7 @@
 
 #### Q17. What translator converts the screen toolpath into language the CNC machine understands?
 
-- [x] a post processor
+- [x] a post-processor
 - [ ] G-code
 - [ ] NC-code
 - [ ] a code processor
@@ -251,11 +250,9 @@
 - [ ] Wood
 - [ ] Metal
 
-
 #### Q36. What do the red locks shown on these sketch icons represent?
 
 - [ ] The sketches are under-constrained.
 - [x] The sketches are fully constrained.
 - [ ] The sketches cannot be edited.
 - [ ] The sketches are locked.
-

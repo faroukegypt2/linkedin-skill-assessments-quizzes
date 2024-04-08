@@ -551,7 +551,7 @@
 - [ ] Destination
 - [ ] Duration
 - [ ] Pages/Screens per Session
-- [ ] Event
+- [x] Event
 
 #### Q78. What is an interaction that causes data to be sent to Analytics?
 
@@ -617,3 +617,10 @@
 - [ ] in-page analytics
 - [ ] waht pages are missing from you site
 - [x] how users search on you site
+
+#### Q87. What does analytics set and read for each unique domain being tracked?
+
+- [ ] HTML
+- [x] cookies
+- [ ] pixels
+- [ ] sessions

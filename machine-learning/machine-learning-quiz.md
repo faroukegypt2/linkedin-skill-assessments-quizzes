@@ -118,7 +118,7 @@
 - [ ] Machine learning servers can host larger databases.
 - [ ] The algorithms can run on unstructured data.
 
-#### Q17. You work for an insurance company. Which machine learning project would add the most value for the company!
+#### Q17. You work for an insurance company. Which machine learning project would add the most value for the company?
 
 - [ ] Create an artificial neural network that would host the company directory.
 - [x] Use machine learning to better predict risk.
@@ -207,10 +207,10 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q28. Self-organizing maps are specialized neural network for which type of machine learning?
 
-- [x] semi-supervised learning
+- [ ] semi-supervised learning
 - [ ] supervised learning
 - [ ] reinforcement learning
-- [ ] unsupervised learning
+- [x] unsupervised learning
 
 #### Q29. Which statement about K-means clustering is true?
 
@@ -285,7 +285,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] unsupervised learning
 - [ ] algorithms
 
-**Explanation**: This one is pretty straight forward and a fundamental concept.
+**Explanation**: This one is pretty straightforward and a fundamental concept.
 [Source:](https://towardsdatascience.com/machine-learning-for-beginners-d247a9420dab)
 
 #### Q39. Why is it important for machine learning algorithms to have access to high-quality data?
@@ -369,7 +369,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 - [ ] regression analysis
 - [ ] unsupervised learning
-- [ ] high -variance modeling
+- [ ] high-variance modeling
 - [x] ensemble modeling
 
 #### Q50. Your data science team wants to use machine learning to better filter out spam messages. The team has gathered a database of 100,000 messages that have been identified as spam or not spam. If you are using supervised machine learning, what would you call this data set?
@@ -407,7 +407,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] unsupervised machine learning
 - [x] reinforcement learning
 
-#### Q55. The model will be trained with data in one single batch is known as ?
+#### Q55. The model will be trained with data in one single batch is known as?
 
 - [ ] Batch learning
 - [ ] Offline learning
@@ -478,7 +478,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 **Explanation**: The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.
 
-#### Q64. You work for a website that helps match people up for lunch dates. The website boasts that it uses more than 500 predictors to find customers the perfect date, but many costumers complain that they get very few matches. What is a likely problem with your model?
+#### Q64. You work for a website that helps match people up for lunch dates. The website boasts that it uses more than 500 predictors to find customers the perfect date, but many customers complain that they get very few matches. What is a likely problem with your model?
 
 - [ ] Your training set is too large.
 - [ ] You are underfitting the model to the data.
@@ -525,7 +525,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] Help avoiding the vanishing/exploding gradient problem
 - [ ] Their ability to activate each neurons individually.
 
-#### Q70. Which loss function would fit best in a categorical (discrete) supervised learning ?
+#### Q70. Which loss function would fit best in a categorical (discrete) supervised learning?
 
 - [ ] kullback-leibler (KL) loss
 - [x] Binary Crossentropy
@@ -560,7 +560,7 @@ Note: there are centres of clusters (C0, C1, C2).
 #### Q73. You need to quickly label thousands of images to train a model. What should you do?
 
 - [ ] Set up a cluster of machines to label the images
-- [ ] Create a subset of the images and label then yourself
+- [ ] Create a subset of the images and label them yourself
 - [x] Use naive Bayes to automatically generate labels.
 - [ ] Hire people to manually label the images
 
@@ -573,7 +573,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] high bias, high variance
 - [x] low bias, low variance
 
-  `// since the data is accurately classified and is neither overfitting or underfitting the dataset`
+  `// since the data is accurately classified and is neither overfitting nor underfitting the dataset`
 
 #### Q75. You need to select a machine learning process to run a distributed neural network on a mobile application. Which would you choose?
 
@@ -717,7 +717,7 @@ Note: there are centres of clusters (C0, C1, C2).
 
 - [ ] Bias is when your predicted values are scattered.
 - [x] Bias is the gap between your predicted value and the outcome.
-- [ ] Bias is when your data is wrong for differnet reasons.
+- [ ] Bias is when your data is wrong for different reasons.
 - [ ] Bias is when your values are always off by the same percentage.
 
 #### Q94. Which project might be best suited for supervised machine learning?
@@ -879,7 +879,7 @@ Which of these statements do you agree with?
 - [x] reinforcement learning.
 - [ ] supervised learning.
 
-**Explanation**: Reinforcement learning is the branch of machine learning where the algorithm interacts with the enviroment and get rewards or penalizations [Source](https://www.deepmind.com/publications/playing-atari-with-deep-reinforcement-learning)
+**Explanation**: Reinforcement learning is the branch of machine learning where the algorithm interacts with the environment and gets rewards or penalizations [Source](https://www.deepmind.com/publications/playing-atari-with-deep-reinforcement-learning)
 
 #### Q114. An organization that owns dozens of shopping malls want to create a machine learning product that will use facial recognition to identify customers. What is one of the main challenges with developing such a product?
 
@@ -889,3 +889,103 @@ Which of these statements do you agree with?
 - [ ] Most machine learning algorithms are not designed for video.
 
 **Explanation**: there are many ethical questions about consent and privacy in machine learning algorithms [Source](https://www.nature.com/articles/d41586-020-03187-3)
+
+#### Q115. What is the difference between unstructured and structured data ?
+
+- [ ] Unstructured data is much easier to store.
+- [x] Structured data has clearly defined data types.
+- [ ] Unstructured data is always text.
+- [ ] Structured data is much more popular.
+
+#### Q116. You work for a startup that is trying to develop a software tool that will scan the internet for pictures of people using specific products. The chief executive is very interested in using machine learning algorithms. what would you recommend as the best place to start ?
+
+- [ ] Create a data lake with an unsupervised machine learning alogrithm.
+- [ ] Using an unsupervised machine learning algorithm to cluster together all the photographs
+- [x] Use supervised machine learning to classify photographs based on a predetermined training set.
+- [ ] Use a combination of unsupervised and supervised machine learning to create machine-defined data clusters.
+
+#### Q117. What is the definition of reinforcement learning?
+
+- [x] The machine iterates through different models to continuously improve the outcome.
+- [ ] The developer reinforces what they already know.
+- [ ] The machine reinforces supervised learning.
+- [ ] It is about reinforcing unknown data.
+
+**Explanation:** Reinforcement learning is fundamentally an iterative process. [Source](https://developer.ibm.com/learningpaths/get-started-automated-ai-for-decision-making-api/what-is-automated-ai-for-decision-making/)
+
+#### Q118. Least square regression solves a maximum likelihood estimation problem under a linear model
+
+- [x] True
+- [ ] False
+
+**Explanation:** Least squares regression is a method used to find the best-fitting linear relationship between a dependent variable and one or more independent variables. It minimizes the sum of the squared differences between the observed and predicted values, which is equivalent to maximizing the likelihood of the observed data under a Gaussian noise assumption.
+
+#### Q118. You are part of data science team that is working for a national fast-food chain. You create a simple report that shows trend: Customers who visit the store more often and buy smaller meals spend more than customers who visit less frequently and buy larger meals. What is the most likely diagram that your team created?
+
+- [x] multiclass classification diagram
+- [ ] linear regression and scatter plots
+- [ ] pivot table
+- [ ] K-means cluster diagram
+
+#### Q120. The total types of the layer in radial basis function in neural networks is **\_\_**
+
+- [ ] 1
+- [ ] 2
+- [x] 3
+- [ ] 4
+
+**Explanation:** Radial Basis Functions are a special class of feed-forward neural networks consisting of three layers: an input layer, a hidden layer, and an output layer.
+
+#### Q121. What is a top-down parser?
+
+- [x] Begins by hypothesizing a sentence (the symbol S) and successively predicting lower level constituents until individual preterminal symbols are written
+- [ ] Begins by hypothesizing a sentence (the symbol S) and successively predicting upper level constituents until individual preterminal symbols are written
+- [ ] Begins by hypothesizing lower level constituents and successively predicting a sentence (the symbol S)
+- [ ] Begins by hypothesizing upper level constituents and successively predicting a sentence (the symbol S)
+
+**Explanation:** A top-down parser begins by hypothesizing a sentence (the symbol S) and successively predicting lower level constituents until individual preterminal symbols are written.
+
+#### Q122. Which search method will expand the node that is closest to the goal?
+
+- [ ] Best-first search
+- [x] Greedy best-first search
+- [ ] A\* search
+- [ ] None of the mentioned
+
+**Explanation:** Greedy best-first search is an informed search algorithm where the evaluation function is strictly equal to the heuristic function, disregarding the edge weights in a weighted graph. [Source](https://www.codecademy.com/resources/docs/ai/search-algorithms/greedy-best-first-search)
+
+#### Q123. Which is used to improve the performance of heuristic search?
+
+- [ ] Quality of nodes
+- [x] Quality of heuristic function
+- [ ] Simple form of nodes
+- [ ] None of the mentioned
+
+**Explanation:** Good heuristic can be constructed by relaxing the problem, So the performance of heuristic search can be improved.``
+
+#### Q124. What is a sentence parser typically used for?
+
+- [ ] It is used to parse sentences to check if they are utf-8 compliant.
+- [x] It is used to parse sentences to derive their most likely syntax tree structures.
+- [ ] It is used to parse sentences to assign POS tags to all tokens.
+- [ ] It is used to check if sentences can be parsed into meaningful tokens.
+
+**Explanation:** Sentence parsers analyze a sentence and automatically build a syntax tree.
+
+#### Q125. Which of the following techniques can not be used for normalization in text mining?
+
+- [ ] Stemming
+- [ ] Lemmatization
+- [x] Stop Word Removal
+- [ ] None of the above
+
+**Explanation:** Lemmatization and stemming are the techniques of keyword normalization.
+
+#### Q126. How do you handle missing or corrupted data in a dataset?
+
+- [ ] Drop missing rows or columns
+- [ ] Replace missing values with mean/median/mode
+- [ ] Assign a unique category to missing values
+- [x] All of the above
+
+**Explanation:** All of the above techniques are different ways of imputing the missing values.
