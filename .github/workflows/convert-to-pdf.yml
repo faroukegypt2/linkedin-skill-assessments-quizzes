@@ -25,7 +25,7 @@ jobs:
         with:
           input_dir: microsoft-word
           output_dir: pdfs
-          images_dir: microsoft-word/images
+          images_dir: microsoft-word
           # for example <img src="./images/file-name.png">
           image_import: ./images
           # Default is true, can set to false to only get PDF files
